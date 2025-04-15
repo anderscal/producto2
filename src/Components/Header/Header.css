@@ -1,0 +1,27 @@
+header {
+  font-family: fantasy;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  background: linear-gradient(to left, gold, orange,red);
+
+}
+
+
+h2:hover {
+  color: linear-gradient(to right, red, gold);
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+}
+
+.logo-db {
+  width: 80%;
+  max-width: 340px;
+ 
+}
+
+@media (max-width: 450px) { /* Ejemplo para pantallas de hasta 600px de ancho */
+  header {
+    padding: 10px;
+  }
+}
