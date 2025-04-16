@@ -10,7 +10,7 @@ header {
 
 
 h2:hover {
-  color: linear-gradient(to right, red, gold);
+
   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
 }
 
