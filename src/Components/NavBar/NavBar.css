@@ -1,0 +1,28 @@
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul .item {
+    text-align: center;
+    background-color: brown;
+    width: 80px;
+    border-radius: 3px;
+    padding: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    color: white;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul .item:hover {
+    background-color: white;
+    color: brown;
+}
+
+nav ul .item:active {
+    background-color: #A0522D;
+    color: white;
+}

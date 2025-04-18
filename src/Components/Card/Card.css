@@ -1,7 +1,6 @@
 .base {
-  width: 70%;
+  width: 330px;
   max-width: 330px;
-  /* height: 600px;  */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -14,10 +13,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 340px;
+  height: 320px;
   position: relative;
   z-index: 1;
-  /* overflow: hidden; */
+
 }
 
 .image img.person {
@@ -32,42 +31,34 @@
   transform: scale(1.3);
 }
 
-/* .image::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: inherit;
-    filter: blur(30px) saturate(300%);
-    z-index: -1;
-}  */
-  
 .image::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: radial-gradient(contain, rgba(222, 222, 38, 0.3) 40%, transparent 30%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    z-index: -1;
-  }
-  
-  .image:hover::before {
-    opacity: 1;
-  }
-  .image:hover {
-    box-shadow: 0 0 15px 3px rgba(247, 216, 15, 0.9); /* Un sutil resplandor adicional */
-  }
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(
+    contain,
+    rgba(222, 222, 38, 0.3) 40%,
+    transparent 30%
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
 
-.datos {
+.image:hover::before {
+  opacity: 1;
+}
+.image:hover {
+  box-shadow: 0 0 15px 3px rgba(247, 216, 15, 0.9);
+}
+
+ .datos {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  padding: 25px;
+  padding: 25px 5px 15px 25px;
   color: black;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -77,26 +68,26 @@
   z-index: 2;
 }
 
-.titulo {
-  margin-top: 12px;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
 .titulo-name {
-  margin-top: 15px;
   font-size: 1.4em;
   color: rgb(234, 178, 35);
   font-weight: bold;
 }
 
+.titulo {
+  margin-top: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+
+
 .valor {
   font-size: 1em;
-  font-weight: normal;
 }
 
 @media (max-width: 600px) {
   .base {
-    width: 95%;
+    width: 300px;
   }
-}
+} 

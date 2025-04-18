@@ -3,7 +3,9 @@ import "./Card.css";
 
 const Card = (props) => {
   const { image, name,raza,genero,kiBase, kiTotal, affiliation } = props;
+
   return (
+   
     <div className="base">
       <div className="image">
         <img src={image} alt={`Imagen de ${name}`} className="person" />

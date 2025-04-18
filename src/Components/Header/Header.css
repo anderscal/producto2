@@ -8,10 +8,13 @@ header {
 
 }
 
+h2{
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
 
+}
 h2:hover {
 
-  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff;
+  text-shadow: 0 0 5px rgb(226, 19, 19), 0 0 10px rgb(226, 19, 19), 0 0 15px rgb(226, 19, 19);
 }
 
 .logo-db {
