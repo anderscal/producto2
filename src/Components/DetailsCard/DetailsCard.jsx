@@ -52,48 +52,50 @@ const DetailsCard = () => {
 
   return (
     <>
-    <div className="details-container">
-    <div className="details-card">
-        <div className="image2">
-          <img src={image} alt={`Imagen de ${name}`} className="person2" />
+      <div className="details-container">
+        {/* Sección de detalles */}
+        <div className="details-card">
+          <div className="image2">
+            <img src={image} alt={`Imagen de ${name}`} className="person2" />
+          </div>
+          <div className="datos2">
+            <p className="titulo-name2">{name}</p>
+            <p className="valor2">{`${race}, ${gender}`}</p>
+            <p className="titulo2">Base KI:</p>
+            <p className="valor2">{ki}</p>
+            <p className="titulo2">Total KI:</p>
+            <p className="valor2">{maxKi}</p>
+            <p className="titulo2">Afiliación:</p>
+            <p className="valor2">{affiliation}</p>
+            <p className="titulo2">Descripción:</p>
+            <p className="valor2">{description}</p>
+            <p className="titulo2">Planeta de Origen:</p>
+            <p className="valor2">{originPlanet.name}</p>
+            <p className="valor2">{originPlanet.description}</p>
+          </div>
         </div>
-        <div className="datos2">
-          <p className="titulo-name2">{name}</p>
-          <p className="valor2">{`${race}, ${gender}`}</p>
-          <p className="titulo2">Base KI:</p>
-          <p className="valor2">{ki}</p>
-          <p className="titulo2">Total KI:</p>
-          <p className="valor2">{maxKi}</p>
-          <p className="titulo2">Afiliación:</p>
-          <p className="valor2">{affiliation}</p>
-          <p className="titulo2">Descripción:</p>
-          <p className="valor2">{description}</p>
-          <p className="titulo2">Planeta de Origen:</p>
-          <p className="valor2">{originPlanet.name}</p>
-          <p className="valor2">{originPlanet.description}</p>
-        </div>
-      </div>
-      <div className="details-transformations">
-        <h3 className="transformations-title">Transformaciones</h3>
-        <div className="transformations-container">
-          {transformations.map((transformation) => (
-            <div key={transformation.id} className="transformation-card">
-              <div className="transformation-image">
-                <img
-                  src={transformation.image}
-                  alt={`Imagen de ${transformation.name}`}
-                />
-              </div>
-              <div className="transformation-data">
-                <p className="transformation-name">{transformation.name}</p>
-                <p className="transformation-ki">KI: {transformation.ki}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
 
+        {/* Sección de transformaciones */}
+        <div className="details-transformations">
+          <h3 className="transformations-title">Transformaciones</h3>
+          <div className="transformations-container">
+            {transformations.map((transformation) => (
+              <div key={transformation.id} className="transformation-card">
+                <div className="transformation-image">
+                  <img
+                    src={transformation.image}
+                    alt={`Imagen de ${transformation.name}`}
+                  />
+                </div>
+                <div className="transformation-data">
+                  <p className="transformation-name">{transformation.name}</p>
+                  <p className="transformation-ki">KI: {transformation.ki}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
     </>
   );
 };
