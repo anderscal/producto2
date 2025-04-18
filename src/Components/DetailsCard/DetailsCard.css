@@ -1,5 +1,12 @@
 /* Sección superior */
 
+details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .details-card {
   width: 600px;
   max-width: 600px;
@@ -61,9 +68,16 @@
 
 /* Sección de transformaciones */
 .details-transformations {
-  max-width: 600px;
   background: linear-gradient(to bottom, black, gray);
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  max-width: 600px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  justify-content: center;
   border-radius: 10px;
   color: white;
 }
@@ -77,9 +91,9 @@
 
 .transformations-container {
   display: flex;
-  flex-wrap: wrap; /* Permite que las tarjetas pasen a la siguiente fila si no hay espacio */
-  gap: 20px; /* Espaciado entre las tarjetas */
-  justify-content: center; /* Centra las tarjetas horizontalmente */
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .transformation-card {
@@ -88,17 +102,16 @@
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  width: 200px; /* Ancho fijo para las tarjetas */
-  height: 320px; /* Altura fija igual a la tarjeta de detalles */
+  width: 220px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribuye el contenido verticalmente */
+  justify-content: space-between; 
   align-items: center;
 }
 
 .transformation-image {
   width: 100%;
-  height: 200px; /* Altura fija para las imágenes */
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -109,7 +122,7 @@
 .transformation-image img {
   width: 100%;
   height: 100%;
-  object-fit: contain; 
+  object-fit: contain;
   transition: transform 0.4s ease;
   border-radius: 8px;
 }

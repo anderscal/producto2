@@ -52,7 +52,8 @@ const DetailsCard = () => {
 
   return (
     <>
-      <div className="details-card">
+    <div className="details-container">
+    <div className="details-card">
         <div className="image2">
           <img src={image} alt={`Imagen de ${name}`} className="person2" />
         </div>
@@ -91,6 +92,8 @@ const DetailsCard = () => {
           ))}
         </div>
       </div>
+    </div>
+
     </>
   );
 };
