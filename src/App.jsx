@@ -6,7 +6,8 @@ import NavBar from "./Components/NavBar/NavBar";
 import HomePage from "./Page/HomePage/HomePage";
 import DetailsPage from "./Page/DetailsPage/DetailsPage";
 import FilterPage from "./Page/FilterPage/FilterPage";
-
+import ErrorPage from "./Page/ErrorPage/ErrorPage";
+import CardPersonal from "./Page/CardPersonal/CardPersonal";
 const App = () => {
   return (
     <>
@@ -17,7 +18,8 @@ const App = () => {
           <Route path="/" element={<HomePage/>} />
           <Route path="/details/:id" element={<DetailsPage/>} />
           <Route path="/filter/:genero" element={<FilterPage/>} />
-          {/* <Route path="*" element={<ErrorPage />} /> */}
+          <Route path="/acercade" element={<CardPersonal/>} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
     </>
