@@ -1,18 +1,17 @@
-
 ul {
     display: flex;
     justify-content: space-around;
-    align-items: center;
 }
 
 nav ul .item {
-    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
     background-color: brown;
-    width: 80px;
-    border-radius: 3px;
-    padding: 5px;
+    border-radius: 4px;
+    padding: 8px;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 30px;
     color: white;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -22,7 +21,15 @@ nav ul .item:hover {
     color: brown;
 }
 
-nav ul .item:active {
-    background-color: #A0522D;
+
+.item.active {
     color: white;
+    /* background-color: #007bff;  */
+    border-radius: 5px;
+    background-image: linear-gradient(to right, red, gold);
+
+}
+
+.item.active:hover {
+    color: white
 }

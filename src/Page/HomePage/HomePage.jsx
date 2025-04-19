@@ -33,16 +33,12 @@ const HomePage = () => {
     <>
       <main>
         {characters.map((character) => (
-          // <Link
-          //   to={`/${character.id}`}
-          //   key={character.id}
-          //   className="card-link"
-
-          //     </Link>
-
-          <Link className="card-link" to={`/details/${character.id}`} state={{ character }}>
+          <Link
+            className="card-link"
+            to={`/details/${character.id}`}
+            state={{ character }}
+          >
             <Card
-              
               key={character.id}
               image={character.image}
               name={character.name}

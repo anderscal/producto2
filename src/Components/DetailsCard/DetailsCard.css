@@ -150,48 +150,48 @@
   color: white;
 }
 
-/* Pantallas pequeñas (tablets y móviles) */
+/* responsive */
 @media (max-width: 768px) {
   .details-card {
-    flex-direction: column; /* Cambia a diseño vertical */
+    flex-direction: column; 
     align-items: center;
     padding: 10px;
   }
 
   .image2 {
-    width: 100%; /* La imagen ocupa todo el ancho */
-    height: 300px; /* Ajusta la altura */
+    width: 100%; 
+    height: 300px; 
   }
 
   .datos2 {
-    width: 100%; /* La información ocupa todo el ancho */
-    text-align: center; /* Centra el texto */
+    width: 100%; 
+    text-align: center;
   }
 
   .transformations-container {
-    gap: 10px; /* Reduce el espacio entre las tarjetas */
+    gap: 10px; 
   }
   .transformation-card {
-    width: 100%; /* Las tarjetas ocupan todo el ancho disponible */
-    height: auto; /* Ajusta la altura automáticamente */
+    width: 100%;
+    height: auto; 
   }
 
   .transformation-image {
-    height: 200px; /* Ajusta la altura de las imágenes */
+    height: 200px; 
   }
 }
 
-/* Pantallas muy pequeñas (móviles pequeños) */
+
 @media (max-width: 480px) {
   .titulo-name2 {
-    font-size: 20px; /* Reduce el tamaño del texto */
+    font-size: 20px; 
   }
 
   .transformation-card {
-    width: 100%; /* Las tarjetas ocupan todo el ancho disponible */
-    height: auto; /* Ajusta la altura automáticamente */
+    width: 100%; 
+    height: auto; 
   }
   .transformation-image {
-    height: 150px; /* Reduce la altura de las imágenes */
+    height: 150px; 
   }
 }
