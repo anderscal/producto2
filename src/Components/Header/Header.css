@@ -23,7 +23,7 @@ h2:hover {
  
 }
 
-@media (max-width: 450px) { /* Ejemplo para pantallas de hasta 600px de ancho */
+@media (max-width: 450px) { 
   header {
     padding: 10px;
   }

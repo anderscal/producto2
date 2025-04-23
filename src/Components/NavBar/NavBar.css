@@ -1,6 +1,10 @@
 ul {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 nav ul .item {
@@ -9,9 +13,9 @@ nav ul .item {
     font-size: 1.2rem;
     background-color: brown;
     border-radius: 4px;
-    padding: 8px;
+    padding: 8px 12px; 
     text-decoration: none;
-    margin-top: 30px;
+    margin-top: 15px; 
     color: white;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -21,15 +25,32 @@ nav ul .item:hover {
     color: brown;
 }
 
-
 .item.active {
     color: white;
-    /* background-color: #007bff;  */
     border-radius: 5px;
     background-image: linear-gradient(to right, red, gold);
-
 }
 
 .item.active:hover {
-    color: white
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    nav ul .item {
+        font-size: 1rem; 
+        padding: 6px 10px; 
+        width: 80%; /* Los botones ocupan el 80% del ancho */
+        text-align: center; 
+    }
+
+    nav ul .item:hover {
+        background-color: white;
+        color: brown;
+    }
 }

@@ -15,8 +15,8 @@
 /* Sección de detalles */
 .details-card {
   display: flex;
-  flex-direction: row; /* Coloca la imagen y la información en una fila */
-  align-items: stretch; /* Asegura que los elementos hijos ocupen la misma altura */
+  flex-direction: row; 
+  align-items: stretch; 
   justify-content: space-between;
   width: 100%;
   max-width: 1200px; /* Limita el ancho total */
